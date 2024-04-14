@@ -1,26 +1,18 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import FirstPage from './pages/FirstPage';
+import SecondPage from './pages/SecondPage';
+import ThirdPage from './pages/ThirdPage';
+import Navbar from './components/Navbar';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+const App: React.FC = () => (
+    <BrowserRouter>
+      <Routes>
+            <Route path="/" element={<FirstPage />} />
+            <Route path="/SecondPage" element={<SecondPage />} />
+            <Route path="/ThirdPage" element={<ThirdPage />} />
+      </Routes>
+    </BrowserRouter>
+);
 
-export default App;
+export default App
