@@ -8,7 +8,7 @@ import Navbar from './components/Navbar';
 const App: React.FC = () => (
     <BrowserRouter>
       <Routes>
-            <Route path="/" element={<FirstPage />} />
+            <Route path="/FirstPage" element={<FirstPage />} />
             <Route path="/SecondPage" element={<SecondPage />} />
             <Route path="/ThirdPage" element={<ThirdPage />} />
       </Routes>
