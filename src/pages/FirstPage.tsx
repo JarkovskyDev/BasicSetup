@@ -1,11 +1,9 @@
 import React from 'react'
 import FirstCom from '../components/FirstCom'
-import Navbar from '../components/Navbar'
 
-const FirstPage: React.FC = () => {
+const FirstPage = () => {
   return (
     <div>
-      <Navbar />
       <FirstCom />
     </div>
   )
